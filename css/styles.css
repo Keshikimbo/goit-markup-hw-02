@@ -5,8 +5,8 @@
   --secondary-text-color: #757575;
   --btn-main-color-text: #212121;
   --btn-focus-color-text: #ffffff;
-  --main-letter-spacing: letter-spacing 0.03em;
-  --main-font-size: font-size 14px;
+  --main-letter-spacing: 0.03em;
+  --main-font-size: 14px;
   --hero-color-text: #ffffff;
   --btn-portfolio-background-color: #f5f4fa;
   --hero-background-color: #2f303a;
