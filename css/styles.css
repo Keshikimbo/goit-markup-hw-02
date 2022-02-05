@@ -1,0 +1,193 @@
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --accent-color: #2196f3;
+  --secondary-text-color: #757575;
+  --btn-main-color-text: #212121;
+  --btn-focus-color-text: #ffffff;
+  --main-letter-spacing: letter-spacing 0.03em;
+  --main-font-size: font-size 14px;
+  --hero-color-text: #ffffff;
+  --btn-portfolio-background-color: #f5f4fa;
+  --hero-background-color: #2f303a;
+  --main-section-text-color: #212121;
+  --team-section-background-color: #f5f4fa;
+  --footer-color-adress-text: #ffffff;
+  --second-path-logo-color: #000000;
+  --contacts-footer-color: #ffffff99;
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: var(--main-font-family);
+  letter-spacing: var(--main-letter-spacing);
+  font-size: var(--main-font-size);
+}
+.logo {
+  color: var(--accent-color);
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-second-part {
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--second-path-logo-color);
+}
+.title {
+  font-family: var(--secondary-font-family);
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.modal-btn {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--btn-focus-color-text);
+  background-color: var(--accent-color);
+}
+.btn-portfolio {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--btn-main-color-text);
+  background: var(--btn-portfolio-background-color);
+  border-radius: 4px;
+}
+.modal-btn:hover,
+:focus {
+  color: var(--btn-focus-color-text);
+  background-color: var(--accent-color);
+}
+.nav-list-link {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--btn-main-color-text);
+}
+.nav-list-link:hover,
+:focus {
+  color: var(--accent-color);
+}
+.contact-number {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.contacts {
+  color: var(--secondary-text-color);
+}
+.contacts:hover,
+:focus {
+  color: var(--accent-color);
+}
+.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-color-text);
+  background-color: var(--hero-background-color);
+}
+.invisible-header {
+  visibility: hidden;
+  opacity: 0;
+}
+.feature {
+  font-weight: bold;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-section-text-color);
+}
+.feature-description {
+  font-weight: normal;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
+}
+.components {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--main-section-text-color);
+}
+.section-team {
+  background: var(--team-section-background-color);
+}
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--main-section-text-color);
+}
+.section-team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+.log-footer {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--footer-color-adress-text);
+}
+.footer-section {
+  background: var(--hero-background-color);
+}
+.address-footer {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--footer-color-adress-text);
+}
+.contacts-footer {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.71;
+  color: var(--contacts-footer-color);
+}
+.address-footer:hover,
+:focus {
+  color: var(--accent-color);
+}
+.contacts-footer:hover,
+:focus {
+  color: var(--accent-color);
+}
+.title-portfolio {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-section-text-color);
+}
+.subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
