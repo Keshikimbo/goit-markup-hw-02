@@ -26,6 +26,7 @@ body {
   font-family: var(--main-font-family);
   letter-spacing: var(--main-letter-spacing);
   font-size: var(--main-font-size);
+  color: var(--secondary-text-color);
 }
 .logo {
   color: var(--accent-color);
@@ -91,10 +92,8 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
 }
 .contacts {
-  color: var(--secondary-text-color);
 }
 .contacts:hover,
 :focus {
@@ -123,7 +122,6 @@ body {
 .feature-description {
   font-weight: normal;
   line-height: 1.71;
-  color: var(--secondary-text-color);
 }
 .components {
   font-weight: bold;
@@ -146,7 +144,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  color: var(--secondary-text-color);
 }
 .log-footer {
   font-weight: bold;
