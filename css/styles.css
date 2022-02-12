@@ -92,6 +92,10 @@ body {
   line-height: 1.19;
 }
 .modal-btn {
+  min-width: 200px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
