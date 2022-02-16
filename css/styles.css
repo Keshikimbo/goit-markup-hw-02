@@ -15,11 +15,12 @@
   --footer-color-adress-text: #ffffff;
   --second-path-logo-color: #000000;
   --contacts-footer-color: #ffffff99;
+  --border-card-color: #eeeeee;
 }
 .list {
   list-style: none;
 }
-.link {
+a {
   text-decoration: none;
 }
 button {
@@ -29,7 +30,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -38,9 +40,12 @@ ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
   font-family: var(--main-font-family);
@@ -56,6 +61,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   display: flex;
+  align-items: center;
 }
 .conteiner {
   width: 1200px;
@@ -82,23 +88,14 @@ body {
   line-height: 1.19;
 }
 .logo-second-part {
-  font-family: var(--secondary-font-family);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
   color: var(--second-path-logo-color);
-  margin-right: 70px;
 }
-.title {
-  font-family: var(--secondary-font-family);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+.header-logo {
+  margin-right: 93px;
 }
 .modal-btn {
   margin-top: 30px;
-  min-width: 200px;
-  padding: 8px 24px;
+  padding: 10px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
@@ -106,9 +103,6 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: var(--btn-focus-color-text);
   background-color: var(--accent-color);
 }
@@ -118,20 +112,20 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: var(--btn-main-color-text);
   background: var(--btn-portfolio-background-color);
   border-radius: 4px;
-  padding: 3px 11px;
-  min-width: 130px;
+  padding: 6px 22px;
+}
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  background: var(--accent-color);
+  color: var(--btn-focus-color-text);
 }
 .modal-btn-portfolio {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .btm-filters:not(:last-child) {
   margin-right: 8px;
@@ -139,26 +133,32 @@ body {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
-.project-card:not(:nth-child(3n)) {
-  margin-right: 30px;
+.project-card {
+  flex-basis: calc((100%-90px) / 3);
 }
 .project-card:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
 .modal-btn:hover,
-:focus {
+.modal-btn:focus {
   color: var(--btn-focus-color-text);
   background-color: var(--accent-color);
 }
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.our-work-section {
+  padding-top: 0;
+}
+.project-text-wrapper {
+  padding: 20px 0px 20px 24px;
+  border-top: none;
+  border: 1px solid var(--border-card-color);
 }
 .feature-list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: initial;
 }
 .feature-list:not(:last-child) {
@@ -174,7 +174,7 @@ body {
   color: var(--btn-main-color-text);
 }
 .nav-list-link:hover,
-:focus {
+.nav-list-link:focus {
   color: var(--accent-color);
 }
 .contact-number {
@@ -191,30 +191,25 @@ body {
   color: var(--secondary-text-color);
 }
 .contacts:hover,
-:focus {
+.contacts:focus {
   color: var(--accent-color);
 }
 .hero-section {
   background-color: var(--hero-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.hero-section-wrapper {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
 }
 .hero {
-  min-width: 665px;
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--hero-color-text);
   background-color: var(--hero-background-color);
+  margin: 0 auto;
 }
 .invisible-header {
   position: absolute;
@@ -228,19 +223,16 @@ body {
 }
 .feature {
   font-weight: bold;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-section-text-color);
 }
 .feature-description {
-  font-weight: normal;
   line-height: 1.71;
-  min-width: 250px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-.our-work-section {
-  padding-bottom: 94px;
+  width: 270px;
+  color: var(--secondary-text-color);
+  margin-top: 10px;
 }
 .components {
   font-weight: bold;
@@ -258,14 +250,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
 }
 .employer-card {
   margin-left: 30px;
-  margin-top: 30px;
-}
-.team-card {
-  margin-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .section-team {
   background: var(--team-section-background-color);
@@ -284,26 +274,26 @@ body {
   line-height: 1.19;
   text-align: center;
 }
-.logo-footer-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  flex-direction: column;
+.text-team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-color: var(--hero-color-text);
 }
+
 .address:not(:last-child) {
   margin-bottom: 9px;
 }
-.logo-section {
+.logo-footer {
   margin-bottom: 20px;
+  display: block;
 }
 .log-footer {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
   color: var(--footer-color-adress-text);
 }
 .footer-section {
   background: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address-footer {
   font-style: normal;
@@ -317,31 +307,22 @@ body {
   color: var(--contacts-footer-color);
 }
 .address-footer:hover,
-:focus {
+.address-footer:focus {
   color: var(--accent-color);
 }
 .contacts-footer:hover,
-:focus {
+.contacts-footer:focus {
   color: var(--accent-color);
 }
 .title-portfolio {
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-section-text-color);
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .subtitle {
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
